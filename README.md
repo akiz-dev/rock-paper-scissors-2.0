@@ -1,2 +1,2 @@
-# rock-paper-scissors-console-mode
+# rock-paper-scissors-2.0
 Project Rock Paper Scissors
