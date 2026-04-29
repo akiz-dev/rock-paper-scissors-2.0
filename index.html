@@ -16,16 +16,19 @@
 
     <div class="container">
         <div class="display">
-            <h2>Scores:</h2>            
+            <h2>Scores:</h2> 
+            <p id="playerScoreDisplay">Player</p>
+            <p id="computerScoreDisplay">Computer</p>           
         </div><!--./display-->
         <div class="game__screen">
             <div class="choices__wrapper">
-                <i class="fa-solid fa-hand-back-fist"></i>
-                <i class="fa-solid fa-hand"></i>
-                <i class="fa-solid fa-hand-scissors"></i>
+                <i class="fa-solid fa-hand-back-fist" id="rock"></i>
+                <i class="fa-solid fa-hand" id="paper"></i>
+                <i class="fa-solid fa-hand-scissors" id="scissors"></i>
             </div><!--./choices__wrapper-->
+    
             <div class="buttons__wrapper">
-                <button type="button" class="btn btn-danger">Reset the Game</button>
+                <button type="button" class="btn btn-danger" id="btnReset">Resetar Jogo</button>
             </div><!--./buttons__wrapper-->
         </div><!--./game__screen-->
     </div><!--./container-->
