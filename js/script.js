@@ -48,7 +48,7 @@ function playRound(playerSelect, computerSelect){
     console.log(playerSelect, computerSelect);
 
     if(playerSelect === computerSelect) {
-        console.log(`Empate! Ambos escolheram ${playerSelect}`);
+        alert(`Empate! Ambos escolheram ${playerSelect}`);
     } else if(
         playerSelect === "Rock" && computerSelect === "Scissors" ||
         playerSelect === "Paper" && computerSelect === "Rock" ||
@@ -62,7 +62,7 @@ function playRound(playerSelect, computerSelect){
         computerScore++;
         console.log(`Computer wins ${computerScore} ${playerScore}`);
         computerScoreDisplay.textContent = 'Computer ' + computerScore;
-    }
+    };
 
     // show winner
     if (playerScore === 5 && playerScore > computerScore) {
@@ -71,7 +71,7 @@ function playRound(playerSelect, computerSelect){
     } else if(computerScore === 5 && computerScore > playerScore) {
         alert("computer winner");
         resetGame()
-    }
+    };
 };
 
 // reset game
@@ -79,7 +79,7 @@ const btnResetGame = document.getElementById('btnReset');
 
 btnResetGame.addEventListener('click', () => {
     resetGame()
-})
+});
 
 function resetGame(){
     playerScore = 0;
@@ -87,5 +87,4 @@ function resetGame(){
 
     playerScoreDisplay.textContent = 'Player ' + playerScore;
     computerScoreDisplay.textContent = 'Computer ' + computerScore;
-
 }
